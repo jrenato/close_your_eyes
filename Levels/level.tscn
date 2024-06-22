@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://y3ixdec00v6b"]
+
+[ext_resource type="PackedScene" uid="uid://87v8bgmlxhc3" path="res://Assets/Models/mine_corridor_001.tscn" id="1_ggd1h"]
+[ext_resource type="PackedScene" uid="uid://yoc1cws112wr" path="res://Assets/Models/mine_corridor_002.tscn" id="3_boets"]
+[ext_resource type="PackedScene" uid="uid://e0savncw1xgr" path="res://Player/character.tscn" id="3_lq01m"]
+[ext_resource type="PackedScene" uid="uid://crrjbkprhe0kc" path="res://Assets/Models/mine_big_room_corridor.tscn" id="4_pa22w"]
+[ext_resource type="PackedScene" uid="uid://dj1i13qn2rkah" path="res://Assets/Models/mine_big_room_t_juntion.tscn" id="5_wiy4s"]
+
+[sub_resource type="Environment" id="Environment_8j7hb"]
+tonemap_mode = 2
+ssr_enabled = true
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_read_sky_light = false
+glow_enabled = true
+glow_normalized = true
+glow_blend_mode = 0
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0.454524, 0.454524, 0.454524, 1)
+volumetric_fog_length = 20.0
+
+[node name="Level" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_8j7hb")
+
+[node name="Character" parent="." instance=ExtResource("3_lq01m")]
+
+[node name="MineCorridor1" parent="." instance=ExtResource("1_ggd1h")]
+
+[node name="Node3D" parent="." instance=ExtResource("3_boets")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.27)
+
+[node name="MineBigRoomCorridor" parent="." instance=ExtResource("4_pa22w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.692272, 0, 12.4216)
+
+[node name="MineBigRoomTJuntion" parent="." instance=ExtResource("5_wiy4s")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.35563, 0, 29.2839)
