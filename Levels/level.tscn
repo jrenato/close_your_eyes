@@ -16,27 +16,29 @@ sdfgi_read_sky_light = false
 glow_enabled = true
 glow_normalized = true
 glow_blend_mode = 0
-volumetric_fog_enabled = true
 volumetric_fog_albedo = Color(0.454524, 0.454524, 0.454524, 1)
 volumetric_fog_length = 20.0
 
-[node name="Level" type="Node3D"]
+[node name="CanvasLayer" type="CanvasLayer"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_8j7hb")
 
 [node name="Character" parent="." instance=ExtResource("3_lq01m")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -2.56609)
 
-[node name="MineCorridor1" parent="." instance=ExtResource("1_ggd1h")]
+[node name="Level" type="Node3D" parent="."]
 
-[node name="Node3D" parent="." instance=ExtResource("3_boets")]
+[node name="MineCorridor1" parent="Level" instance=ExtResource("1_ggd1h")]
+
+[node name="Node3D" parent="Level" instance=ExtResource("3_boets")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.27)
 
-[node name="MineBigRoomCorridor" parent="." instance=ExtResource("4_pa22w")]
+[node name="MineBigRoomCorridor" parent="Level" instance=ExtResource("4_pa22w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.692272, 0, 12.4216)
 
-[node name="MineBigRoomTJuntion" parent="." instance=ExtResource("5_wiy4s")]
+[node name="MineBigRoomTJuntion" parent="Level" instance=ExtResource("5_wiy4s")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.35563, 0, 29.2839)
 
-[node name="Zombie" parent="." instance=ExtResource("6_sqtly")]
+[node name="Zombie" parent="Level" instance=ExtResource("6_sqtly")]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -2.74845, -0.00459981, 29.8916)
