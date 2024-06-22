@@ -439,11 +439,11 @@ speed_scale = 4.0
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
-light_color = Color(0.266575, 0.266575, 0.266575, 1)
-light_energy = 0.5
+light_color = Color(0.27451, 0.27451, 0.27451, 1)
+light_energy = 0.3
 
 [node name="Hand" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 1.02511, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Hand"]
 light_color = Color(0.917647, 1, 1, 1)
