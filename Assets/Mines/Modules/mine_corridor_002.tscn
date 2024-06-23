@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cl6nqkdk4a3rh" path="res://Assets/Mines/Textures/modular_mines_Rocks_W.jpg" id="1_nsokx"]
 [ext_resource type="Texture2D" uid="uid://dvldu7xdplxir" path="res://Assets/Mines/Textures/modular_mines_SoilRough.jpg" id="2_8k4bd"]
 [ext_resource type="Texture2D" uid="uid://bh6123dj54rvk" path="res://Assets/Mines/Textures/modular_mines_WoodRough.jpg" id="3_56a17"]
-[ext_resource type="PackedScene" uid="uid://dqsa3qn3e235l" path="res://Assets/Mines/Modules/wooden_scaffold_corridor.tscn" id="4_ofxvj"]
+[ext_resource type="PackedScene" uid="uid://dqsa3qn3e235l" path="res://Assets/Mines/Modules/scaffold_corridor.tscn" id="4_ofxvj"]
 [ext_resource type="Texture2D" uid="uid://vw2mnku1beh4" path="res://Assets/Mines/Textures/modular_mines_MetalRusted.jpg" id="4_rss1h"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cj2il"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c16y1eixaoudd"]
+[gd_scene load_steps=6 format=3 uid="uid://c16y1eixaoudd"]
 
 [ext_resource type="Texture2D" uid="uid://bb73jde0xf00x" path="res://Assets/Mines/Textures/items_mines_Box_Wood.jpg" id="1_o0kfs"]
 
@@ -39,7 +39,17 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_kktoa")
 
-[node name="Box_Wood" type="MeshInstance3D"]
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_p4dyc"]
+data = PackedVector3Array(-1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Box_Wood" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.563518, 0, 0, 0, 0.578737, 0, 0, 0, 0.563518, 0, 0.576622, 0)
 mesh = SubResource("ArrayMesh_5st64")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Box_Wood"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box_Wood/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_p4dyc")

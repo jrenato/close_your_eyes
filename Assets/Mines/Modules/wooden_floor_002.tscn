@@ -40,6 +40,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_x2bhc")
 
 [node name="WoodenFloor_002" type="MeshInstance3D"]
-transform = Transform3D(0.0311478, 0.999515, 0, -0.999515, 0.0311478, 0, 0, 0, 1.05308, 14.7437, 5.76365, -9.4347)
+transform = Transform3D(0.0311478, 0.999515, 0, -0.999515, 0.0311478, 0, 0, 0, 1.05308, 0, 0, 0)
 mesh = SubResource("ArrayMesh_ta8v8")
 skeleton = NodePath("")
