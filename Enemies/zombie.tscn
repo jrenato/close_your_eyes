@@ -1,12 +1,18 @@
-[gd_scene load_steps=17 format=3 uid="uid://dr5qhykx8d0kh"]
+[gd_scene load_steps=18 format=3 uid="uid://dr5qhykx8d0kh"]
 
 [ext_resource type="Texture2D" uid="uid://bv60nkd4flc6v" path="res://Assets/Models/Zombie_Zombie_tex.png" id="1_gkikq"]
+[ext_resource type="Texture2D" uid="uid://7wfjepvuldkw" path="res://Assets/Models/Zombie_Zombie_emission.png" id="2_1jmry"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vtmhw"]
 resource_name = "Zombie_1"
 cull_mode = 2
 albedo_texture = ExtResource("1_gkikq")
 roughness = 0.5
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 2.0
+emission_operator = 1
+emission_texture = ExtResource("2_1jmry")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lohxl"]
 resource_name = "Zombie_Cube_001"

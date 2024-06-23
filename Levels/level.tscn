@@ -41,4 +41,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.692272, 0, 12.4216)
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.35563, 0, 29.2839)
 
 [node name="Zombie" parent="Level" instance=ExtResource("6_sqtly")]
-transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -2.74845, -0.00459981, 29.8916)
+transform = Transform3D(-0.7, 0, -6.11959e-08, 0, 0.7, 0, 6.11959e-08, 0, -0.7, -2.74845, -0.00459981, 29.8916)
