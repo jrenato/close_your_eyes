@@ -446,6 +446,7 @@ light_energy = 0.3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Hand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.323953, -0.250631, 0)
 light_color = Color(0.917647, 1, 1, 1)
 light_energy = 8.0
 light_projector = ExtResource("2_l1ch7")
