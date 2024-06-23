@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dqsa3qn3e235l"]
+[gd_scene load_steps=8 format=3 uid="uid://dqsa3qn3e235l"]
 
 [ext_resource type="Texture2D" uid="uid://bh6123dj54rvk" path="res://Assets/Mines/Textures/modular_mines_WoodRough.jpg" id="1_07a8t"]
 
@@ -39,7 +39,13 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_fuoei")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dhjlu"]
-size = Vector3(1.00713, 7.93494, 19.9938)
+size = Vector3(1, 8, 22)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7kotv"]
+size = Vector3(0.908, 7.684, 22)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kype4"]
+size = Vector3(8.322, 1, 22)
 
 [node name="WoodenScaffoldCorridor" type="MeshInstance3D"]
 transform = Transform3D(0.389301, 0.0138613, 0, -0.0138613, 0.389301, 0, 0, 0, -0.389548, 0, 1.79011, 0)
@@ -49,5 +55,13 @@ skeleton = NodePath("")
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(0.997081, -0.0763537, 0, 0.0763537, 0.997081, 0, 0, 0, 1, 3.62032, -0.539043, -0.115416)
+transform = Transform3D(0.997081, -0.0763537, 0, 0.0763537, 0.997081, 0, 0, 0, 1, 3.62, -0.539, 0)
 shape = SubResource("BoxShape3D_dhjlu")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, -0.00204224, 0, 0.00204224, 1, 0, 0, 0, 1, -3.725, -0.898, 0)
+shape = SubResource("BoxShape3D_7kotv")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.996748, -0.0805817, 0, 0.0805817, 0.996748, 0, 0, 0, 1, -0.1, 2.902, 0)
+shape = SubResource("BoxShape3D_kype4")
